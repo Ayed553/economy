@@ -1,0 +1,5 @@
+# Money new players start with
+starting-balance: 1000
+currency-symbol: "$"
+currency-singular: "Dollar"
+currency-plural: "Dollars"

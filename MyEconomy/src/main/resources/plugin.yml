@@ -1,0 +1,25 @@
+name: MyEconomy
+main: com.example.eco.MyEconomy
+version: 1.0.0
+api-version: '26.1'
+depend: [Vault]
+description: Simple Vault economy with /bal, /pay, /baltop and /eco.
+commands:
+  bal:
+    description: Check your balance or another player's
+    aliases: [balance, money]
+    usage: /bal [player]
+  pay:
+    description: Send money to an online player
+    usage: /pay <player> <amount>
+  baltop:
+    description: Show the richest players
+    aliases: [balancetop]
+    usage: /baltop
+  eco:
+    description: Admin economy commands
+    usage: /eco <give|take|set> <player> <amount>
+permissions:
+  myeconomy.admin:
+    description: Use /eco
+    default: op
